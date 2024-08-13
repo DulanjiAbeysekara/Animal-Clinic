@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" prefHeight="470.0" prefWidth="721.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.petclinic.controllers.LoginController">
+   <children>
+      <ImageView fitHeight="338.0" fitWidth="598.0" layoutX="150.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="470.0" fitWidth="942.0" layoutX="-12.0" opacity="0.68" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/MacBook Air - 1.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtUserNamer" layoutX="427.0" layoutY="290.0" prefHeight="40.0" prefWidth="240.0" style="-fx-border-color: #11B037; -fx-border-radius: 35; -fx-background-color: white;" />
+      <Button id="green" fx:id="btnLogin" layoutX="424.0" layoutY="416.0" mnemonicParsing="false" onAction="#btnLogInOnAction" opacity="0.33" prefHeight="40.0" prefWidth="240.0" style="-fx-background-color: #11B037; -fx-background-radius: 35;" stylesheets="@../sheets/new.css" text="Login" />
+      <PasswordField fx:id="pass" layoutX="427.0" layoutY="356.0" prefHeight="40.0" prefWidth="240.0" style="-fx-border-color: #11B037; -fx-border-radius: 35; -fx-background-color: white;" />
+   </children>
+</AnchorPane>

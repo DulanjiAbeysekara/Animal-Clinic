@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="mainPane" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.petclinic.controllers.HomepageController">
+   <children>
+      <ImageView fitHeight="698.0" fitWidth="1120.0" layoutX="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Home%20page%20new-%202%20(1).jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnPet" layoutX="75.0" layoutY="162.0" mnemonicParsing="false" onAction="#btnPetOnAction" opacity="0.0" prefHeight="49.0" prefWidth="300.0" text="pet Management" />
+      <Button fx:id="btnCustomer" layoutX="87.0" layoutY="90.0" mnemonicParsing="false" onAction="#btnCustomerOnAction" opacity="0.0" prefHeight="57.0" prefWidth="300.0" text="customer Management" />
+      <Button fx:id="btnDoctor" layoutX="86.0" layoutY="242.0" mnemonicParsing="false" onAction="#btnDoctorOnAction" opacity="0.0" prefHeight="49.0" prefWidth="300.0" text="doctor Management" />
+      <Button fx:id="btnHealth" layoutX="84.0" layoutY="320.0" mnemonicParsing="false" onAction="#btnHealthOnAction" opacity="0.0" prefHeight="49.0" prefWidth="300.0" text="health Management" />
+      <Button fx:id="btnPetItem" layoutX="89.0" layoutY="401.0" mnemonicParsing="false" onAction="#btnPetItemOnAction" opacity="0.0" prefHeight="49.0" prefWidth="300.0" text="pet item Management" />
+      <Button fx:id="btnSupplier" layoutX="80.0" layoutY="483.0" mnemonicParsing="false" onAction="#btnSupplierOnAction" opacity="0.0" prefHeight="57.0" prefWidth="300.0" text="supplier Management" />
+      <Button fx:id="btnReport" layoutX="84.0" layoutY="580.0" mnemonicParsing="false" onAction="#btnReportOnAction" opacity="0.0" prefHeight="49.0" prefWidth="300.0" text="report" />
+   </children>
+</AnchorPane>

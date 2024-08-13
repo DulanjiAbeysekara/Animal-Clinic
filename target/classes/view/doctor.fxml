@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="doctorPane" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.petclinic.controllers.DoctorController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1200.0" layoutX="67.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Doctor%20managemnt%20new.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtDoctorId" layoutX="772.0" layoutY="117.0" prefHeight="30.0" prefWidth="220.0" style="-fx-border-color: black; -fx-border-radius: 35; -fx-background-color: white;" />
+      <TextField fx:id="txtDoctorName" layoutX="772.0" layoutY="173.0" prefHeight="30.0" prefWidth="220.0" style="-fx-border-color: black; -fx-border-radius: 35; -fx-background-color: white;" />
+      <TextField fx:id="txtDoctorMobileNum" layoutX="772.0" layoutY="229.0" prefHeight="30.0" prefWidth="220.0" style="-fx-border-color: black; -fx-border-radius: 35; -fx-background-color: white;" />
+      <TextField fx:id="txtSchedule" layoutX="775.0" layoutY="288.0" prefHeight="30.0" prefWidth="220.0" style="-fx-border-color: black; -fx-border-radius: 35; -fx-background-color: white;" />
+      <Button fx:id="btnAdd" layoutX="196.0" layoutY="633.0" mnemonicParsing="false" onAction="#btnAddOnAction" opacity="0.0" prefHeight="41.0" prefWidth="89.0" text="Add" />
+      <Button fx:id="btnDelete" layoutX="432.0" layoutY="633.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" opacity="0.0" prefHeight="41.0" prefWidth="86.0" text="Update" />
+      <Button fx:id="doctorBackBtn" layoutX="571.0" layoutY="636.0" mnemonicParsing="false" onAction="#doctorBackBtnOnAction" prefHeight="39.0" prefWidth="86.0" style="-fx-border-color: black; -fx-border-radius: 35; -fx-background-color: #11B037;" text="Back">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="102.0" fitWidth="130.0" layoutX="708.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/1000_F_387943473_14HNFrDOQba1B6T52OmXbZHl2V9gLRED.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblDoctor" layoutX="556.0" layoutY="349.0" prefHeight="272.0" prefWidth="576.0">
+        <columns>
+          <TableColumn fx:id="colDoctorId" prefWidth="75.0" text="Doctor Id" />
+          <TableColumn fx:id="colDoctorName" prefWidth="115.0" text="Doctor Name" />
+            <TableColumn fx:id="colDoctorMobileNum" prefWidth="187.0" text="Doctor Mobile Num" />
+            <TableColumn fx:id="colSchedule" prefWidth="254.0" text="Schedule" />
+        </columns>
+      </TableView>
+      <Label layoutX="610.0" layoutY="168.0" text="Doctor Name  :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="660.0" layoutY="294.0" prefWidth="86.0" text="Schedule  :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="633.0" layoutY="122.0" text="Doctor Id  :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="602.0" layoutY="230.0" text="Mobile Number  :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnUpdate" layoutX="315.0" layoutY="633.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" opacity="0.0" prefHeight="41.0" prefWidth="89.0" text="Update" />
+   </children>
+</AnchorPane>

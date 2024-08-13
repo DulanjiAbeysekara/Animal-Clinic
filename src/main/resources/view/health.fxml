@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="healthPane" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.petclinic.controllers.HealthController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1200.0" layoutX="52.0" layoutY="-14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Health%20new.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="102.0" fitWidth="77.0" layoutX="60.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/1000_F_387943473_14HNFrDOQba1B6T52OmXbZHl2V9gLRED.jpg" />
+         </image></ImageView>
+      <TableView fx:id="tblSurgery" layoutX="217.0" layoutY="112.0" prefHeight="172.0" prefWidth="655.0">
+        <columns>
+          <TableColumn fx:id="colSurgeryId" prefWidth="75.0" text="Surgery Id" />
+          <TableColumn fx:id="colSurgeryName" prefWidth="119.0" text="Surgery Name" />
+            <TableColumn fx:id="colSurgerySchedule" prefWidth="136.3333740234375" text="Surgery Schedule" />
+            <TableColumn fx:id="colReason" prefWidth="122.6666259765625" text="Reason" />
+            <TableColumn fx:id="colPrice" prefWidth="100.33331298828125" text="Price" />
+            <TableColumn fx:id="colDoctorId" prefWidth="99.0" text="Doctor Id" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tblVaccination" layoutX="72.0" layoutY="333.0" prefHeight="190.0" prefWidth="834.0">
+        <columns>
+          <TableColumn fx:id="colVaccinationId" prefWidth="79.0" text="Vaccination Id" />
+          <TableColumn fx:id="colVaccinationName" prefWidth="149.0" text="Vaccination Name" />
+            <TableColumn fx:id="colBrand" prefWidth="117.0" text="Brand" />
+            <TableColumn fx:id="colPrice" prefWidth="99.0" text="Price" />
+            <TableColumn fx:id="colDateOfIssue" prefWidth="143.0" text="Date Of Isuue" />
+            <TableColumn fx:id="colExpiryDate" prefWidth="129.0" text="Expiry Date" />
+            <TableColumn prefWidth="117.0" text="Doctor Id" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnBack" layoutX="390.0" layoutY="576.0" mnemonicParsing="false" onAction="#btnBackOnAction" prefHeight="9.0" prefWidth="86.0" style="-fx-border-color: #11B037; -fx-border-radius: 35; -fx-background-color: white; -fx-background-radius: 35;" text="Back">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnViewSurgery" layoutX="127.0" layoutY="587.0" mnemonicParsing="false" onAction="#btnViewSurgeryOnAction" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: #11B037; -fx-background-radius: 15;" text="View Surgery">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font></Button>
+      <Button fx:id="btnViewVaccination" layoutX="243.0" layoutY="587.0" mnemonicParsing="false" onAction="#btnViewVaccinationOnAction" prefHeight="25.0" prefWidth="116.0" style="-fx-background-color: #11B037; -fx-background-radius: 15;" text="View Vaccination">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
